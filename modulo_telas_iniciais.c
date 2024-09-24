@@ -94,7 +94,7 @@ void tela_equipe(void) {
   printf("***          Repositorio: https://github.com/expeditofranca/Na_Hora-Certa   ***\n");
   printf("***                                                                         ***\n");
   printf("***          Marco Geovane Araújo                                           ***\n");
-  printf("***          E-mail:                              ***\n");
+  printf("***          E-mail: shinytopazio@gmail.com                                 ***\n");
   printf("***          Redes Sociais: @HumanoGeovs (Git)                              ***\n");
   printf("***          Repositorio: https://github.com/HumanoGeovs/Na_Hora-Certa      ***\n");
   printf("***                                                                         ***\n");
@@ -103,6 +103,18 @@ void tela_equipe(void) {
   printf("\n");
   printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
   getchar();
+}
+
+void msg_escolha_invalida(void){
+  printf("*******************************************************************************\n");
+  printf("*******************************************************************************\n");
+  printf("***                            Escolha invalida!                            ***\n");
+}
+
+void msg_deu_certo(void){
+  printf("*******************************************************************************\n");
+  printf("*******************************************************************************\n");
+  printf("***                       Acao realizada com sucesso!                       ***\n");
 }
 
 void tela_login(void){
