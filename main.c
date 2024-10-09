@@ -4,6 +4,7 @@
 #include "modulo_professor.h"
 #include "modulo_aluno.h"
 #include "modulo_salas.h"
+#include "modulo_disciplinas.h"
 
 int main(void){
     char op = tela_menu_principal();
@@ -54,6 +55,23 @@ int main(void){
             tela_pesquisar_salas();
           } else if (op2 == '4'){
             tela_atualizar_salas();
+          } else {
+            msg_escolha_invalida();  
+          }
+
+          op2 = tela_menu_salas();
+        }
+      } else if (op == '4') {
+        char op2 = tela_menu_disciplina();
+        while(op2 != '0'){
+          if (op2 == '1'){
+            tela_cadastrar_disciplina();
+          } else if (op2 == '2'){
+            tela_excluir_disciplina();
+          } else if (op2 == '3'){
+            tela_pesquisar_disciplina();
+          } else if (op2 == '4'){
+            tela_atualizar_disciplina();
           } else {
             msg_escolha_invalida();  
           }
