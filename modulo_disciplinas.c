@@ -27,6 +27,10 @@ char tela_menu_disciplina(void){
 }
 
 void tela_cadastrar_disciplina(void){
+  char nome[40];
+  char dep[5];
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -44,6 +48,8 @@ void tela_cadastrar_disciplina(void){
 }
 
 void tela_pesquisar_disciplina(void){
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -59,6 +65,8 @@ void tela_pesquisar_disciplina(void){
 }
 
 void tela_atualizar_disciplina(void){
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -74,6 +82,8 @@ void tela_atualizar_disciplina(void){
 }
 
 void tela_excluir_disciplina(void){
+  char cod[9];
+  
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
