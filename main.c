@@ -78,6 +78,10 @@ int main(void){
 
           op2 = tela_menu_salas();
         }
+      } else if (op == '5') {
+        tela_sobre();
+      } else if (op == '6') {
+        tela_equipe();
       } else {
         msg_escolha_invalida();  
       } 
