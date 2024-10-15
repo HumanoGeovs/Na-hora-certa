@@ -27,14 +27,21 @@ char tela_menu_salas(void){
 }
 
 void tela_cadastrar_salas(void){
+  char s_bloco[3];
+  char s_num[4];
+  char s_cod[5];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
   printf("***                  - - - - Cadastrar Salas - - - -                        ***\n");
   printf("***                                                                         ***\n");
   printf("***         Bloco:                                                           ***\n");
+  scanf("%s", s_bloco);
   printf("***         Número:                                                         ***\n");
+  scanf("%s", s_num);
   printf("***         Código:                                                            ***\n");
+  scanf("%s", s_cod);
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -44,12 +51,15 @@ void tela_cadastrar_salas(void){
 }
 
 void tela_pesquisar_salas(void){
+  char s_cod[5];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
   printf("***                  - - - - Pesquisar Salas - - - -                        ***\n");
   printf("***                                                                         ***\n");
   printf("***         Código da sala:                                                 ***\n");
+  scanf("%s", s_cod);
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -59,12 +69,15 @@ void tela_pesquisar_salas(void){
 }
 
 void tela_atualizar_salas(void){
+  char s_cod[5];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
   printf("***                  - - - - Atualizar Salas - - - -                        ***\n");
   printf("***                                                                         ***\n");
   printf("***         Código da sala:                                                 ***\n");
+  scanf("%s", s_cod); 
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -74,12 +87,15 @@ void tela_atualizar_salas(void){
 }
 
 void tela_excluir_salas(void){
+ char s_cod[5];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
   printf("***                   - - - - Excluir Salas - - - -                         ***\n");
   printf("***                                                                         ***\n");
   printf("***         Código da sala:                                                 ***\n");
+  scanf("%s", s_cod); 
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
