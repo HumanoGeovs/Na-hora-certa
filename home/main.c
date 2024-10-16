@@ -1,10 +1,10 @@
 #include <stdio.h> // importa funções que podem ser úteis ao projeto
 #include <stdlib.h> // importa funções que podem ser uteis ao projeto
 #include "modulo_telas_iniciais.h"
-#include "modulo_professor.h"
-#include "modulo_aluno.h"
-#include "modulo_salas.h"
-#include "modulo_disciplinas.h"
+#include "../professor/modulo_professor.h"
+#include "../aluno/modulo_aluno.h"
+#include "../salas/modulo_salas.h"
+#include "../disciplinas/modulo_disciplinas.h"
 
 int main(void){
     char op = tela_menu_principal();

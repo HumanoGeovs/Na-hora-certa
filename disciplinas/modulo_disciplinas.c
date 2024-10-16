@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "modulo_telas_iniciais.h"
-#include "modulo_professor.h"
+#include "../home/modulo_telas_iniciais.h"
+#include "modulo_disciplinas.h"
 
-char tela_menu_professor(void){
+char tela_menu_disciplina(void){
   char op;
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
-  printf("***                     - - - - Menu Professor - - - -                      ***\n");
+  printf("***                   - - - - Menu Disciplina - - - -                       ***\n");
   printf("***                                                                         ***\n");
-  printf("***         1 - Cadastrar Professor                                         ***\n");
-  printf("***         2 - Excluir Professor                                           ***\n");
-  printf("***         3 - Pesquisar Professor                                         ***\n");
-  printf("***         4 - Atualizar Professor                                         ***\n");
+  printf("***         1 - Cadastrar Disciplina                                        ***\n");
+  printf("***         2 - Excluir Disciplina                                          ***\n");
+  printf("***         3 - Pesquisar Disciplina                                        ***\n");
+  printf("***         4 - Atualizar Disciplina                                        ***\n");
   printf("***         0 - Sair                                                        ***\n");
   printf("***                                                                         ***\n");
   printf("***         Escolha a opcao desejada...                                     ***\n");
@@ -26,16 +26,19 @@ char tela_menu_professor(void){
   return op;
 }
 
-void tela_cadastrar_professor(void){
+void tela_cadastrar_disciplina(void){
+  char nome[40];
+  char dep[5];
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
-  printf("***                  - - - - Cadastrar Professor - - - -                    ***\n");
+  printf("***                - - - - Cadastrar Disciplina - - - -                     ***\n");
   printf("***                                                                         ***\n");
   printf("***         Nome:                                                           ***\n");
-  printf("***         E-mail:                                                         ***\n");
-  printf("***         CPF:                                                            ***\n");
-  printf("***         Telefone:                                                       ***\n");
+  printf("***         Departamento:                                                   ***\n");
+  printf("***         Código:                                                            ***\n");
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -44,13 +47,15 @@ void tela_cadastrar_professor(void){
   getchar();
 }
 
-void tela_pesquisar_professor(void){
+void tela_pesquisar_disciplina(void){
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
-  printf("***                  - - - - Pesquisar Professor - - - -                    ***\n");
+  printf("***                - - - - Pesquisar Disciplina - - - -                     ***\n");
   printf("***                                                                         ***\n");
-  printf("***         CPF:                                                            ***\n");
+  printf("***         Código:                                                         ***\n");
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -59,13 +64,15 @@ void tela_pesquisar_professor(void){
   getchar();
 }
 
-void tela_atualizar_professor(void){
+void tela_atualizar_disciplina(void){
+  char cod[9];
+
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
-  printf("***                  - - - - Atualizar Professor - - - -                    ***\n");
+  printf("***                - - - - Atualizar Disciplina - - - -                     ***\n");
   printf("***                                                                         ***\n");
-  printf("***         CPF:                                                            ***\n");
+  printf("***         Código:                                                         ***\n");
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
@@ -74,13 +81,15 @@ void tela_atualizar_professor(void){
   getchar();
 }
 
-void tela_excluir_professor(void){
+void tela_excluir_disciplina(void){
+  char cod[9];
+  
   cabecalho_principal();
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
-  printf("***                   - - - - Excluir Professor - - - -                     ***\n");
+  printf("***                 - - - - Excluir Disciplina - - - -                      ***\n");
   printf("***                                                                         ***\n");
-  printf("***         CPF:                                                            ***\n");
+  printf("***         Código:                                                         ***\n");
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("*******************************************************************************\n");
